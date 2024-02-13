@@ -12,7 +12,7 @@ const PORT = 8080;
 
 //puntos de entrada para ROUTES
 app.use('/api/products', productsRouter)
-app.use('api/carts', cartsRouter)
+app.use('/api/carts', cartsRouter)
 
 app.listen(PORT, (req,res)=>{
     console.log(`servidor escuchando en el puerto ${PORT}`);
